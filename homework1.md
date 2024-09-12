@@ -64,6 +64,9 @@ def test_word_lengths():
 ### 4. Function: `reverse_string`
 **Description**: Write a function that takes a string and returns it reversed. Implement the reversal using a loop or recursion.
 
+#Solution 4
+'''python
+
 **Restrictions**: Do not use the `reversed()` function.
 
 **Unit Tests**:
@@ -82,6 +85,9 @@ def test_reverse_string():
 
 ### 5. Function: `intersection`
 **Description**: Write a function that takes two lists and returns their intersection as a new list. Implement this using nested loops or a dictionary for counting occurrences.
+
+#Solution 5
+'''python
 
 **Restrictions**: Do not use list comprehensions.
 

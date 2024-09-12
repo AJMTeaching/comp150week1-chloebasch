@@ -2,14 +2,50 @@
 
 # Lab 1
 # Problem 1
+1. Create a list called my_list with the values [1, 5, 'apple', 20.5].
+'''python 
+my_list = [1, 5, 'apple', 20.5]
+'''
+
+2. Using indexing, print the value 'apple' from my_list.
+'''python 
+my_list = [1, 5, 'apple', 20.5]
+print(my_list['apple'])
+'''
+
+3. Add the value 10 to the end of my_list using the append() method. Print the updated list.
+'''
+my_list = [1, 5, 'apple', 20.5]
+print(my_list['apple'])
+    my_list.append(10)
+    print(my_list['apple',10])
+'''
+
+4. Remove the value 20.5 from my_list using the remove() method. Print the updated list.
+'''
+my_list = [1, 5, 'apple', 20.5]
+    my_list.remove(20.5)
+    print(my_list[1, 5, 'apple'])
+'''
+
+5. Reverse the order of the elements in my_list using a method. Print the reversed list.
+''' 
+my_list = 1, 5, 'apple', 20.5]
+
+'''
 # Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
 
 # Problem 2
+1. Create a dictionary called person with keys 'name', 'age', 'job' and values 'John', 30, 'teacher'.
+2. Print the value corresponding to the 'job' key.
+3. Add a new key-value pair: 'city': 'Paris' to the person dictionary. Print the updated dictionary.
+4. Remove the 'age' key-value pair from person. Print the updated dictionary.
+5. Iterate through the person dictionary and print out each key-value pair on a separate line.
 # Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
 
 # -----------------------------------------------------------------------------
 
-
+[]
 # Importing sys for test function
 import sys
 
@@ -21,6 +57,20 @@ def test(did_pass):
     msg = f"Test at line {linenum} {'PASSED' if did_pass else 'FAILED'}."
     print(msg)
 
+#Solution 1
+'''python
+def count_vowels[a,e,i,o,u]
+print[a]
+    return{a}
+print[e]
+    return{e}
+print[i]
+    return{i}
+print[o]
+    return{o}
+print[u]
+    return{u}
+'''
 
 # Function 1: count_vowels
 def count_vowels(s: str) -> int:
@@ -50,6 +100,10 @@ def test_count_vowels():
     test(count_vowels("a e i o u") == 5)
     test(count_vowels("rhythm") == 0)
 
+#Solution 2
+'''python
+
+'''
 
 # Function 2: merge_lists
 def merge_lists(list1: list, list2: list) -> list:
@@ -82,6 +136,10 @@ def test_merge_lists():
     test(merge_lists([1, 3, 5, 7, 9], [2, 4, 6, 8, 10]) == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     test(merge_lists([1, 1, 2, 3], [1, 2, 2, 3]) == [1, 1, 1, 2, 2, 2, 3, 3])
 
+#Solution 3
+'''python
+
+'''
 
 # Function 3: word_lengths
 def word_lengths(words: list) -> list:
@@ -109,6 +167,10 @@ def test_word_lengths():
     test(word_lengths(["", "a", "ab", "abc"]) == [0, 1, 2, 3])
     test(word_lengths(["  ", "a b", " c "]) == [2, 3, 3])
 
+#Solution 4
+'''python
+
+'''
 
 # Function 4: reverse_string
 def reverse_string(s: str) -> str:
@@ -137,6 +199,10 @@ def test_reverse_string():
     test(reverse_string("12345") == "54321")
     test(reverse_string("  spaces  ") == "  secaps  ")
 
+#Solution 5
+'''python 
+
+'''
 
 # Function 5: intersection
 def intersection(list1: list, list2: list) -> list:
