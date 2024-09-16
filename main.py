@@ -9,40 +9,66 @@ my_list = [1, 5, 'apple', 20.5]
 
 2. Using indexing, print the value 'apple' from my_list.
 '''python 
-my_list = [1, 5, 'apple', 20.5]
-print(my_list['apple'])
+print(my_list[2)
 '''
 
 3. Add the value 10 to the end of my_list using the append() method. Print the updated list.
-'''
-my_list = [1, 5, 'apple', 20.5]
-print(my_list['apple'])
+'''python
     my_list.append(10)
-    print(my_list['apple',10])
+    print(my_list)
 '''
 
-4. Remove the value 20.5 from my_list using the remove() method. Print the updated list.
-'''
-my_list = [1, 5, 'apple', 20.5]
+ 4. Remove the value 20.5 from my_list using the remove() method. Print the updated list.
+'''python
     my_list.remove(20.5)
-    print(my_list[1, 5, 'apple'])
+    print(my_list)
 '''
 
 5. Reverse the order of the elements in my_list using a method. Print the reversed list.
-''' 
-my_list = 1, 5, 'apple', 20.5]
+'''python 
+my_list = [::-1]
+my_list_reversed = my_list_reversed()
+    print(my_list)
 
 '''
 # Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
 
 # Problem 2
 1. Create a dictionary called person with keys 'name', 'age', 'job' and values 'John', 30, 'teacher'.
+'''python
+person = {"name": 'John', "age": '30', "job": 'teacher'}
+person = {
+    "name": 'John'
+    "age": '30'
+    "job": 'teacher'
+}
+'''
 2. Print the value corresponding to the 'job' key.
+'''python
+print(person['job'])
+print(person.get['job'])
+'''
+
 3. Add a new key-value pair: 'city': 'Paris' to the person dictionary. Print the updated dictionary.
+'''python
+person.update[city]: 'Paris'
+person = {
+    "name": 'John'
+    "age": '30'
+    "job": 'teacher'
+    "city": 'Paris'
+
+'''
 4. Remove the 'age' key-value pair from person. Print the updated dictionary.
+
 5. Iterate through the person dictionary and print out each key-value pair on a separate line.
 # Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
+'''
+For key value in person.items():
+    print(f"key:)
 
+For key in person.keys()
+'''
 # -----------------------------------------------------------------------------
 
 []
@@ -59,17 +85,11 @@ def test(did_pass):
 
 #Solution 1
 '''python
-def count_vowels[a,e,i,o,u]
-print[a]
-    return{a}
-print[e]
-    return{e}
-print[i]
-    return{i}
-print[o]
-    return{o}
-print[u]
-    return{u}
+count = 0
+vowels = "aeiouAEIOU"
+for character in 0:
+    if character in vowels:
+        count
 '''
 
 # Function 1: count_vowels
@@ -102,7 +122,7 @@ def test_count_vowels():
 
 #Solution 2
 '''python
-
+while
 '''
 
 # Function 2: merge_lists
@@ -138,7 +158,11 @@ def test_merge_lists():
 
 #Solution 3
 '''python
+list_of_word_lengths = []
+for word in words:
+    list_of_word_lengths.append
 
+return list_of_word_lengths
 '''
 
 # Function 3: word_lengths
@@ -169,7 +193,11 @@ def test_word_lengths():
 
 #Solution 4
 '''python
-
+return s[]::-1]
+list_s = []
+for character in s:
+    list_s append(character)
+    final_index
 '''
 
 # Function 4: reverse_string
@@ -201,7 +229,11 @@ def test_reverse_string():
 
 #Solution 5
 '''python 
-
+intersection_list = []
+for item inlist1:
+    if item in list2:
+        intersection.list.append(item)
+    return list(set(intersection_list))
 '''
 
 # Function 5: intersection
