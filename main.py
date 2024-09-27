@@ -2,77 +2,79 @@
 
 # Lab 1
 # Problem 1
-1. Create a list called my_list with the values [1, 5, 'apple', 20.5].
-'''python 
+#1 Create a list called my_list with the values [1, 5, 'apple', 20.5]. 
+
 my_list = [1, 5, 'apple', 20.5]
-'''
 
-2. Using indexing, print the value 'apple' from my_list.
-'''python 
-print(my_list[2)
-'''
 
-3. Add the value 10 to the end of my_list using the append() method. Print the updated list.
-'''python
-    my_list.append(10)
-    print(my_list)
-'''
+#2 Using indexing, print the value 'apple' from my_list.
 
- 4. Remove the value 20.5 from my_list using the remove() method. Print the updated list.
-'''python
-    my_list.remove(20.5)
-    print(my_list)
-'''
+print(my_list[2])
 
-5. Reverse the order of the elements in my_list using a method. Print the reversed list.
-'''python 
-my_list = [::-1]
-my_list_reversed = my_list_reversed()
-    print(my_list)
 
-'''
+#3 Add the value 10 to the end of my_list using the append() method. Print the updated list.
+
+my_list.append(10)
+print(my_list)
+
+
+#4 Remove the value 20.5 from my_list using the remove() method. Print the updated list.
+
+my_list.remove(20.5)
+print(my_list)
+
+
+#5 Reverse the order of the elements in my_list using a method. Print the reversed list.
+def my_list_reversed(my_list):
+    my_list = [-1]
+    return my_list
+
+
 # Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
 
 # Problem 2
-1. Create a dictionary called person with keys 'name', 'age', 'job' and values 'John', 30, 'teacher'.
-'''python
+#1 Create a dictionary called person with keys 'name', 'age', 'job' and values 'John', 30, 'teacher'.
 person = {"name": 'John', "age": '30', "job": 'teacher'}
 person = {
-    "name": 'John'
-    "age": '30'
+    "name": 'John',
+    "age": '30',
     "job": 'teacher'
 }
-'''
-2. Print the value corresponding to the 'job' key.
-'''python
+
+#2 Print the value corresponding to the 'job' key.
+
 print(person['job'])
-print(person.get['job'])
-'''
 
-3. Add a new key-value pair: 'city': 'Paris' to the person dictionary. Print the updated dictionary.
-'''python
-person.update[city]: 'Paris'
+
+#3 Add a new key-value pair: 'city': 'Paris' to the person dictionary. Print the updated dictionary.
+
 person = {
-    "name": 'John'
-    "age": '30'
-    "job": 'teacher'
+    "name": 'John',
+    "age": '30',
+    "job": 'teacher',
     "city": 'Paris'
+}
+print(person)
 
-'''
-4. Remove the 'age' key-value pair from person. Print the updated dictionary.
+#4 Remove the 'age' key-value pair from person. Print the updated dictionary.
 
-5. Iterate through the person dictionary and print out each key-value pair on a separate line.
-# Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
-'''
-For key value in person.items():
-    print(f"key:)
+person = {
+    "name": 'John',
+    "job": 'teacher',
+    "city": 'Paris'
+}
+print(person)
 
-For key in person.keys()
-'''
+#5 Iterate through the person dictionary and print out each key-value pair on a separate line.
+for key_value in person.items():
+    print(f"key:")
+
+# for key in person.keys():
+
 # -----------------------------------------------------------------------------
 
-[]
-# Importing sys for test function
+
+# Importing sys for test function 
 import sys
 
 
@@ -83,14 +85,7 @@ def test(did_pass):
     msg = f"Test at line {linenum} {'PASSED' if did_pass else 'FAILED'}."
     print(msg)
 
-#Solution 1
-'''python
-count = 0
-vowels = "aeiouAEIOU"
-for character in 0:
-    if character in vowels:
-        count
-'''
+
 
 # Function 1: count_vowels
 def count_vowels(s: str) -> int:
@@ -103,6 +98,11 @@ def count_vowels(s: str) -> int:
     Returns:
     - int: The number of vowels in the string
     """
+    count = 0
+    vowels = "aeiouAEIOU"
+    for character in s:
+        if character in vowels:
+            count += 1
     # TODO: Implement this function
     pass
 
@@ -121,9 +121,7 @@ def test_count_vowels():
     test(count_vowels("rhythm") == 0)
 
 #Solution 2
-'''python
-while
-'''
+#while
 
 # Function 2: merge_lists
 def merge_lists(list1: list, list2: list) -> list:
@@ -156,14 +154,6 @@ def test_merge_lists():
     test(merge_lists([1, 3, 5, 7, 9], [2, 4, 6, 8, 10]) == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     test(merge_lists([1, 1, 2, 3], [1, 2, 2, 3]) == [1, 1, 1, 2, 2, 2, 3, 3])
 
-#Solution 3
-'''python
-list_of_word_lengths = []
-for word in words:
-    list_of_word_lengths.append
-
-return list_of_word_lengths
-'''
 
 # Function 3: word_lengths
 def word_lengths(words: list) -> list:
@@ -176,6 +166,16 @@ def word_lengths(words: list) -> list:
     Returns:
     - list: A list containing the lengths of the words
     """
+    def word_lengths(words):
+        lengths = []
+        for word in words:
+            lengths.append(len(word))
+
+        return lengths
+    my_words = ["hello", "world", "python"]
+    lengths = word_lengths(my_words)
+    print(lengths)
+
     # TODO: Implement this function
     pass
 
@@ -191,14 +191,6 @@ def test_word_lengths():
     test(word_lengths(["", "a", "ab", "abc"]) == [0, 1, 2, 3])
     test(word_lengths(["  ", "a b", " c "]) == [2, 3, 3])
 
-#Solution 4
-'''python
-return s[]::-1]
-list_s = []
-for character in s:
-    list_s append(character)
-    final_index
-'''
 
 # Function 4: reverse_string
 def reverse_string(s: str) -> str:
@@ -211,6 +203,11 @@ def reverse_string(s: str) -> str:
     Returns:
     - str: The reversed string
     """
+    return s[::-1]
+    list_s = []
+    for character in s:
+        list_s.append(character)
+        final_index
     # TODO: Implement this function
     pass
 
@@ -227,14 +224,6 @@ def test_reverse_string():
     test(reverse_string("12345") == "54321")
     test(reverse_string("  spaces  ") == "  secaps  ")
 
-#Solution 5
-'''python 
-intersection_list = []
-for item inlist1:
-    if item in list2:
-        intersection.list.append(item)
-    return list(set(intersection_list))
-'''
 
 # Function 5: intersection
 def intersection(list1: list, list2: list) -> list:
@@ -248,6 +237,11 @@ def intersection(list1: list, list2: list) -> list:
     Returns:
     - list: The intersection of the two lists
     """
+    intersection_list = []
+    for item in list1:
+        if item in list2:
+            intersection_list.append(item)
+    return list(set(intersection_list))
     # TODO: Implement this function
     pass
 
