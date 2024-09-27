@@ -102,7 +102,9 @@ def count_vowels(s: str) -> int:
     vowels = "aeiouAEIOU"
     for character in s:
         if character in vowels:
-            count += 1
+            count += 1 
+    print(count)
+    return count
     # TODO: Implement this function
     pass
 
@@ -121,7 +123,7 @@ def test_count_vowels():
     test(count_vowels("rhythm") == 0)
 
 #Solution 2
-#while
+
 
 # Function 2: merge_lists
 def merge_lists(list1: list, list2: list) -> list:
@@ -135,6 +137,18 @@ def merge_lists(list1: list, list2: list) -> list:
     Returns:
     - list: A new sorted list containing all elements from list1 and list2
     """
+    test_list1 = [1, 3, 5]
+    test_list2 = [2, 4, 6]
+
+    print("The original list 1 is : " + str(test_list1))
+    print("The original lit 2 is : " + str(test_list2))
+
+    test_list1.extend(test_list2)
+    test_list1.sort()
+
+    print("The combined sorted list is : " + str(test_list1))
+    return test_list1
+
     # TODO: Implement this function
     pass
 
