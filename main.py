@@ -137,19 +137,15 @@ def merge_lists(list1: list, list2: list) -> list:
     Returns:
     - list: A new sorted list containing all elements from list1 and list2
     """
-    test_list1 = [1, 3, 5]
-    test_list2 = [2, 4, 6]
+def merge_lists(list1, list2):
+    print("The original list 1 is : " + str(list1))
+    print("The original list 2 is : " + str(list2))
 
-    print("The original list 1 is : " + str(test_list1))
-    print("The original lit 2 is : " + str(test_list2))
+    list1.extend(list2)
+    list1.sort()
 
-    test_list1.extend(test_list2)
-    test_list1.sort()
-
-    print("The combined sorted list is : " + str(test_list1))
-    return test_list1
-
-    # TODO: Implement this function
+    print("The combined sorted list is: " + str(list1))
+    return list1
     pass
 
 
@@ -180,18 +176,16 @@ def word_lengths(words: list) -> list:
     Returns:
     - list: A list containing the lengths of the words
     """
-    def word_lengths(words):
-        lengths = []
-        for word in words:
-            lengths.append(len(word))
+def word_lengths(words):
+    lengths = []
+    for word in words:
+        lengths.append(len(word))
+    return lengths
 
-        return lengths
-    my_words = ["hello", "world", "python"]
-    lengths = word_lengths(my_words)
-    print(lengths)
-
-    # TODO: Implement this function
-    pass
+my_words = ["hello", "world", "python"]
+lengths = word_lengths(my_words)
+print(lengths)
+pass
 
 
 # Unit Tests for word_lengths
